@@ -1,1 +1,132 @@
-/* You can add global styles to this file, and also import other style files */
+/* @import "bootstrap-icons/font/bootstrap-icons.css"; */
+/* :root[data-theme = "light"]{ */
+:root {
+  --color-bg-menu: #284093;
+  --primary-bg-color: #ffffffd3;
+  --secundary-bg-color: #f5f5f5;
+
+  --text-color: black; /*28292e*/
+  --text-color-secundary: white; /*28292e*/
+
+  --text-color-menu: white;
+
+  --scrollbar-track: #f0f0f0;
+  --scrollbar-thumb: #888;
+
+  --color-bg-main-line: #29659c;
+  --color-bg-line-one: #ffffff;
+  --color-bg-line-two: #29659c;
+  --color-bg-line-three: #ffffff;
+  --color-bg-line-four: #29659c;
+}
+
+[data-theme='dark'] {
+  --color-bg-menu: #1a1a1a;
+  --primary-bg-color: #2a2a2a;
+  --secundary-bg-color: #1e1e1e;
+
+  --text-color: #e0e0e0;
+  --text-color-secundary: #ffffff;
+
+  --text-color-menu: #f0f0f0;
+
+  --scrollbar-track: #2b2b2b;
+  --scrollbar-thumb: #555;
+
+  --color-bg-main-line: #444;
+  --color-bg-line-one: #2a2a2a;
+  --color-bg-line-two: #333;
+  --color-bg-line-three: #2a2a2a;
+  --color-bg-line-four: #333;
+}
+
+
+[data-theme='rosa'] {
+  --color-bg-menu: #d63384;
+  --primary-bg-color: #fff0f6;
+  --secundary-bg-color: #ffe3ef;
+
+  --text-color: #6a0033;
+  --text-color-secundary: #ffffff;
+
+  --text-color-menu: #ffffff;
+
+  --scrollbar-track: #f3d1e3;
+  --scrollbar-thumb: #995a7c;
+
+  --color-bg-main-line: #e35ca1;
+  --color-bg-line-one: #ffffff;
+  --color-bg-line-two: #f8c6dc;
+  --color-bg-line-three: #ffffff;
+  --color-bg-line-four: #f8c6dc;
+}
+
+
+[data-theme='amarelo'] {
+  --color-bg-menu: #ffb300;
+  --primary-bg-color: #fff8e1;
+  --secundary-bg-color: #fff1b0;
+
+  --text-color: #5a4600;
+  --text-color-secundary: #5a4600;
+
+  --text-color-menu: #333333;
+
+  --scrollbar-track: #f1e0b5;
+  --scrollbar-thumb: #8a7a3e;
+
+  --color-bg-main-line: #ffd54f;
+  --color-bg-line-one: #ffffff;
+  --color-bg-line-two: #fff1b0;
+  --color-bg-line-three: #ffffff;
+  --color-bg-line-four: #fff1b0;
+}
+
+
+
+html,
+body {
+  height: 100%;
+  background-color: var(--primary-bg-color);
+  margin: 0;
+  padding: 0;
+  min-width: 368px;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: var(--text-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* scrollbar  Chromium, Chrome/Edge/Safari */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 6px;
+  border: none; /* sem borda extra */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
