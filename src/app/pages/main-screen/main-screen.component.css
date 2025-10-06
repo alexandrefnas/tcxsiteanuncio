@@ -118,7 +118,7 @@
 
 .products-card img {
   width: 100%;
-  height: calc(100% -20px);
+  height: calc(100% - 20px);
   margin-bottom: 10px;
   object-fit: contain; /* mantém proporção, não corta a imagem */
   object-position: center; /* centraliza a imagem */
