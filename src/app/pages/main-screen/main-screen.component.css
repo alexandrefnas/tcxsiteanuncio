@@ -72,7 +72,7 @@
 
 .photos img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: contain; /* mantém proporção, não corta a imagem */
   object-position: center; /* centraliza a imagem */
 }

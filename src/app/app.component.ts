@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { MenuComponent } from './components/menu/menu.component';
 import { MenuBaseboardComponent } from './components/menu-baseboard/menu-baseboard.component';
 import { SocialActionsService } from './social-actions.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,12 @@ import { SocialActionsService } from './social-actions.service';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'mmjetlocacoes';// 'tcxsiteanuncio';// mmjetlocacoes
+  title = 'mmjetlocacoes'; // 'tcxsiteanuncio';// mmjetlocacoes
 
-  constructor(private socialActions: SocialActionsService) {}
+  constructor(
+    private socialActions: SocialActionsService,
+    private titleService: Title
+  ) {}
 
   public setTheme(theme: 'azul' | 'dark' | 'rosa' | 'amarelo') {
     document.documentElement.setAttribute('data-theme', theme);
@@ -21,5 +25,14 @@ export class AppComponent {
 
   executarAcao(rede: string) {
     this.socialActions.executarAcao(rede);
+  }
+
+  ngOnInit() {
+    // this.titleService.setTitle(this.title);
+    this.mudarTitulo(this.title);
+  }
+
+  mudarTitulo(novoTitulo: string) {
+    this.titleService.setTitle(novoTitulo);
   }
 }
