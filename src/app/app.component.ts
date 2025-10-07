@@ -11,7 +11,7 @@ import { SocialActionsService } from './social-actions.service';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'tcxsiteanuncio';
+  title = 'mmjetlocacoes';// 'tcxsiteanuncio';// mmjetlocacoes
 
   constructor(private socialActions: SocialActionsService) {}
 

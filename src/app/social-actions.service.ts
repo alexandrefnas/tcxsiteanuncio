@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SocialActionsService {
+  constructor() {}
 
-  constructor() { }
-
-    executarAcao(rede: string) {
+  executarAcao(rede: string) {
     switch (rede) {
       case 'instagram':
         this.abrirInstagram();
@@ -28,12 +27,12 @@ export class SocialActionsService {
 
   abrirInstagram() {
     console.log('Abrindo Instagram');
-     window.open('https://www.instagram.com/tcxtecnologia', '_blank');
+    window.open('https://www.instagram.com/tcxtecnologia', '_blank');
   }
 
   abrirFacebook() {
     console.log('Abrindo Facebook');
-     window.open('https://www.facebook.com/TCXTecnologia', '_blank');
+    window.open('https://www.facebook.com/TCXTecnologia', '_blank');
   }
 
   abrirTwitter() {
@@ -42,7 +41,7 @@ export class SocialActionsService {
   }
 
   enviarWhatsApp() {
-    const numero = '5534999999999'; // 👈 coloque o número (com DDI + DDD, sem espaços ou símbolos)
+    const numero = '5519999542689'; // 👈 coloque o número (com DDI + DDD, sem espaços ou símbolos)
     const mensagem = 'Olá! Gostaria de saber mais sobre seus serviços.'; // 👈 mensagem padrão
 
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;

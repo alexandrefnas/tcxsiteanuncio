@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:tcxsiteanuncio": "node dist/tcxsiteanuncio/server/server.mjs",
-    "deploy": "ng build --configuration production --output-path docs/browser --base-href \"https://alexandrefnas.github.io/tcxsiteanuncio/\" && cpx \"docs/browser/**/*.*\" docs && rimraf docs/browser && npx angular-cli-ghpages --dir=docs --repo https://github.com/alexandrefnas/tcxsiteanuncio.git"
+    "deploy": "ng build --configuration production --output-path docs --base-href \"https://alexandrefnas.github.io/tcxsiteanuncio/\" && cpx \"docs/browser/**/*.*\" docs && rimraf docs/browser && npx angular-cli-ghpages --dir=docs --repo https://github.com/alexandrefnas/tcxsiteanuncio"
   },
   "private": true,
   "dependencies": {
