@@ -1,9 +1,11 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Input } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SocialActionsService {
+
+  @Input() title: string = '';
   constructor() {}
 
   executarAcao(rede: string) {
