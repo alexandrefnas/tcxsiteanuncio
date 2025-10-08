@@ -15,14 +15,14 @@ export class MainScreenComponent {
 
 
   produtos = [
-    { nome: 'Produto1', url: 'assets/images/pngwing.png' },
-    { nome: 'Produto2', url: 'assets/images/pngwing.png' },
-    { nome: 'Produto3', url: 'assets/images/pngwing.png' },
-    { nome: 'Produto4', url: 'assets/images/pngwing.png' },
-    { nome: 'Produto5', url: 'assets/images/pngwing.png' },
-    { nome: 'Produto6', url: 'assets/images/pngwing.png' },
-    { nome: 'Produto7', url: 'assets/images/pngwing.png' },
-    { nome: 'Produto8', url: 'assets/images/pngwing.png' },
+    { nome: '', url: 'assets/images/mmjetlocacoes.png' },
+    { nome: '', url: 'assets/images/mmjetlocacoes2.png' },
+    { nome: '', url: 'assets/images/mmjetlocacoes3.png' },
+    { nome: '', url: 'assets/images/mmjetlocacoes4.png' },
+    { nome: '', url: 'assets/images/mmjetlocacoes5.png' },
+    { nome: '', url: 'assets/images/mmjetlocacoes6.png' },
+    { nome: '', url: 'assets/images/mmjetlocacoes7.png' },
+    { nome: '', url: 'assets/images/mmjetlocacoes8.png' },
   ];
 
   vantagens = [
