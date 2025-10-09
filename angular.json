@@ -14,7 +14,6 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "docs/",
-            "baseHref": "/tcxsiteanuncio/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -30,7 +29,8 @@
               "src/styles.css",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "/tcxsiteanuncio/"
           },
           "configurations": {
             "production": {
