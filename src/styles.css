@@ -1,6 +1,8 @@
 /* @import "bootstrap-icons/font/bootstrap-icons.css"; */
 /* :root[data-theme = "light"]{ */
-:root {
+:root,
+[data-theme='azul'] {
+ 
   --color-bg-menu: #284093;
   --primary-bg-color: #ffffffd3;
   --secundary-bg-color: #f5f5f5;
