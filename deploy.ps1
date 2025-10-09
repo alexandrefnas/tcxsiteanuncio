@@ -39,4 +39,4 @@ git push
 
 Write-Host ""
 Write-Host "Deploy concluído com sucesso!"
-Write-Host "Acesse: https://alexandrefn.github.io/tcxsiteanuncio/"
+Write-Host "Acesse: https://alexandrefnas.github.io/tcxsiteanuncio/"
