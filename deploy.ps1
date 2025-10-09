@@ -1,6 +1,7 @@
 # ============================================
 # Script de Deploy Angular 19 para GitHub Pages
 # Projeto: tcxsiteanuncio
+# PS > ./deploy.ps1
 # ============================================
 
 Write-Host "Iniciando build de produção..."
