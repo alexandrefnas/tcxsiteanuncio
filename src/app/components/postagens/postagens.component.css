@@ -1,0 +1,59 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container__posts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  /* background-color: var(--color-bg-menu); */
+  padding: 10px 40px;
+}
+
+.pousts-services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* gap: 10px; */
+  padding: 10px;
+}
+
+.pousts-imagens {
+  width: 150px !important;
+  height: 200px !important;
+  overflow: hidden;
+  border-radius: 15px;
+  /* border: 1px solid red; */
+}
+
+.pousts-imagens img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* faz preencher cortando o lado maior */
+  object-position: center; /* centraliza a imagem */
+  cursor: pointer;
+}
+
+.pousts-descriptions {
+  width: calc(100% -150px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  justify-content: center;
+  padding: 15px 20px;
+}
+
+.title {
+  height: 30px;
+}
+
+/* .descriptions {
+  flex: 1;
+  border: 1px solid red;
+} */

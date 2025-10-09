@@ -1,0 +1,15 @@
+<div class="container__posts">
+  <div class="pousts-services" *ngFor="let p of pousts">
+    <div class="pousts-imagens">
+      <a [routerLink]="['/videos']" [queryParams]="{ url: p.urlVideo }">
+        <img [src]="p.urlImagens" alt="images" />
+      </a>
+    </div>
+    <div class="pousts-descriptions">
+      <div class="title">
+        <h4>{{ p.title }}</h4>
+      </div>
+      <div class="descriptions">{{ p.descriptions }}</div>
+    </div>
+  </div>
+</div>

@@ -4,10 +4,11 @@ import { NgFor } from '@angular/common';
 import { AppComponent } from '../../app.component';
 import { throttleTime } from 'rxjs';
 import { SocialActionsService } from '../../social-actions.service';
+import { PostagensComponent } from "../../components/postagens/postagens.component";
 
 @Component({
   selector: 'tcx-main-screen',
-  imports: [NgFor],
+  imports: [NgFor, PostagensComponent],
   templateUrl: './main-screen.component.html',
   styleUrl: './main-screen.component.css',
 })
@@ -35,6 +36,21 @@ export class MainScreenComponent {
     { descricao: 'vantagen descrita 7' },
   ];
 
+  pousts = [
+    {
+    title: 'Serviço A',
+    descriptions: 'Serviço prestado a empresa A, passando metros de fibras, mais informações relevantes',
+    urlImagens: 'assets/videos/mmjetimagevideo1.png',
+    urlVideo: 'assets/videos/mmjetvideo1.mp4'
+  },
+    {
+    title: 'Serviço B',
+    descriptions: 'Serviço prestado a empresa A, passando metros de fibras, mais informações relevantes',
+    urlImagens: 'assets/videos/mmjetimagevideo2.jpg',
+    urlVideo: 'assets/videos/mmjetvideo2.mp4'
+  }
+];
+
   constructor(private socialActions: SocialActionsService) {}
 
   abrir(rede: string) {
@@ -47,5 +63,9 @@ export class MainScreenComponent {
   clicou(rede: string) {
     this.clickBotao.emit(rede);
   }
+
+  abrirModal(url: string){
+    console.log('Passando o url: ', url);
+}
 
 }

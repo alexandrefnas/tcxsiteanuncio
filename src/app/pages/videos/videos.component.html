@@ -1,0 +1,17 @@
+<div class="container__videos-screen">
+  <div class="container__videos-screen">
+    <video controls width="100%">
+      <source [src]="videoUrl" type="video/mp4" />
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
+  </div>
+    <div class="container__buttons">
+        <div class="buttons return-home" routerLink="/">
+          <i class="bi bi-house-door"></i>
+          <p>Retorno</p>
+        </div>
+        <div class="buttons " (click)="abrir('whatsapp')">
+          <i class="bi bi-whatsapp"></i>
+        </div>
+      </div>
+</div>
