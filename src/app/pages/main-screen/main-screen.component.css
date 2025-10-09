@@ -24,7 +24,7 @@
 }
 
 .main__line {
-  padding-top: 150px;
+  /* padding-top: 150px; */
   background-color: var(--color-bg-main-line);
   color: var(--text-color-secundary);
 }
@@ -66,16 +66,18 @@
 }
 
 .photos {
-display: flex;
+  display: flex;
   flex-direction: row;
-justify-content: space-evenly;
+  justify-content: space-evenly;
   width: 100%;
   height: 30%;
+  gap: 15px;
 }
 
 .photos img {
-  width: 100%;
-  height: 300px;
+  width: 50%;
+  height: 100%;
+  max-height: 300px;
   object-fit: contain; /* mantém proporção, não corta a imagem */
   object-position: center; /* centraliza a imagem */
 }
@@ -86,9 +88,9 @@ justify-content: space-evenly;
 
 .container__line-one {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 100%;
   height: 100%;
   gap: 25px;
@@ -97,7 +99,13 @@ justify-content: space-evenly;
 
 .title__line-one {
   font-size: 20px;
+  text-align: center;
 }
+
+.title__line-one h2 {
+  text-align: center;
+}
+
 
 .products__container {
   display: grid;
@@ -231,6 +239,7 @@ justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   background-color: var(--color-bg-line-four);
+  gap: 15px;
   /* height: 300px; */
 }
 
@@ -255,6 +264,10 @@ justify-content: space-evenly;
 }
 
 @media (min-width: 150px) {
+  .main__line {
+    padding-top: 50px;
+  }
+
   .title__Advertising {
     font-size: 1.2rem;
     text-align: center;
@@ -290,7 +303,7 @@ justify-content: space-evenly;
   /* .secondary__line-two {  } */
 
   .title__line-two {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
   /* Fim secondary__line-two */
 
@@ -338,6 +351,10 @@ justify-content: space-evenly;
 }
 
 @media (min-width: 625px) {
+  .main__line {
+    padding-top: 90px;
+  }
+
   .title__Advertising {
     font-size: 1.5rem;
     text-align: center;
@@ -425,6 +442,10 @@ justify-content: space-evenly;
 }
 
 @media (min-width: 800px) {
+  .main__line {
+    padding-top: 110px;
+  }
+
   .title__Advertising {
     font-size: 2rem;
     text-align: center;
@@ -470,6 +491,10 @@ justify-content: space-evenly;
 }
 
 @media (min-width: 1000px) {
+  .main__line {
+    padding-top: 150px;
+  }
+
   .title__Advertising {
     font-size: 2.5rem;
     text-align: center;

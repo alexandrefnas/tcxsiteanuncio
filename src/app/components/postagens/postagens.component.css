@@ -12,15 +12,16 @@
   box-sizing: border-box;
   overflow: auto;
   /* background-color: var(--color-bg-menu); */
-  padding: 10px 40px;
+  /* padding: 0px 40px; */
+  gap: 15px;
 }
 
 .pousts-services {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* gap: 10px; */
-  padding: 10px;
+  gap: 10px;
+  /* padding: 10px; */
 }
 
 .pousts-imagens {
@@ -47,7 +48,7 @@
   flex-direction: column;
   font-size: 16px;
   justify-content: center;
-  padding: 15px 20px;
+  /* padding: 15px 20px; */
 }
 
 .title {
@@ -58,3 +59,19 @@
   flex: 1;
   border: 1px solid red;
 } */
+
+@media (max-width: 400px) {
+  /* .container__posts {
+  } */
+
+  .pousts-imagens {
+    width: 105px !important;
+    height: 140px !important;
+  }
+
+  .pousts-descriptions {
+    width: calc(100% - 105px);
+    height: 140px;
+    font-size: 0.9rem;
+  }
+}
