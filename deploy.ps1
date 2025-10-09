@@ -34,9 +34,9 @@ else {
 # Git commit & push
 Write-Host "Enviando alterações para o GitHub..."
 git add .
-git commit -m "Deploy automático para GitHub Pages"
+git commit -m "Deploy automatico para GitHub Pages"
 git push
 
 Write-Host ""
-Write-Host "Deploy concluído com sucesso!"
+Write-Host "Deploy concluido com sucesso!"
 Write-Host "Acesse: https://alexandrefnas.github.io/tcxsiteanuncio/"

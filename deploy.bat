@@ -35,6 +35,6 @@ git push
 
 echo.
 echo [5/5] Deploy concluido com sucesso!
-echo Acesse: https://alexandrefn.github.io/tcxsiteanuncio/
+echo Acesse: https://alexandrefnas.github.io/tcxsiteanuncio/
 echo ============================================
 pause
