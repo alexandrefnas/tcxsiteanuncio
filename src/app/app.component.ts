@@ -28,6 +28,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    this.setTheme('dark');
     // this.titleService.setTitle(this.title);
     this.mudarTitulo(this.title);
   }
