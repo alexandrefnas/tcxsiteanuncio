@@ -40,7 +40,7 @@
 }
 
 .pousts-descriptions {
-  width: calc(100% -150px);
+  width: calc(100% - 150px);
   height: 200px;
   display: flex;
   flex-direction: column;
