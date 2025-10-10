@@ -16,8 +16,12 @@
 }
 
 .menu__logo {
-  width: 150px;
+  display: flex;
+  align-items: center;
+gap: 10px;
+  width: 250px;
   height: 100%;
+  color: var(--text-color-secundary);
   /* border: 1px solid red; */
 }
 
@@ -91,7 +95,7 @@
   padding-left: 50px;
 }
 
-button{
+button {
   background-color: transparent;
   width: 35px;
 }

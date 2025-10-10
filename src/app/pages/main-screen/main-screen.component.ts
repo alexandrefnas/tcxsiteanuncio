@@ -4,7 +4,7 @@ import { NgFor } from '@angular/common';
 import { AppComponent } from '../../app.component';
 import { throttleTime } from 'rxjs';
 import { SocialActionsService } from '../../social-actions.service';
-import { PostagensComponent } from "../../components/postagens/postagens.component";
+import { PostagensComponent } from '../../components/postagens/postagens.component';
 
 @Component({
   selector: 'tcx-main-screen',
@@ -13,8 +13,6 @@ import { PostagensComponent } from "../../components/postagens/postagens.compone
   styleUrl: './main-screen.component.css',
 })
 export class MainScreenComponent {
-
-
   produtos = [
     { nome: '', url: 'assets/images/mmjetlocacoes.png' },
     { nome: '', url: 'assets/images/mmjetlocacoes2.png' },
@@ -27,29 +25,28 @@ export class MainScreenComponent {
   ];
 
   vantagens = [
-    { descricao: 'vantagen descrita 1' },
-    { descricao: 'vantagen descrita 2' },
-    { descricao: 'vantagen descrita 3' },
-    { descricao: 'vantagen descrita 4' },
-    { descricao: 'vantagen descrita 5' },
-    { descricao: 'vantagen descrita 6' },
-    { descricao: 'vantagen descrita 7' },
+    { descricao: 'Instalações longas e contínuas.' },
+    { descricao: 'Menor risco de danos à fibra óptica.' },
+    { descricao: 'Sem escavações ou intervenções manuais.' },
+    { descricao: 'Alta precisão e controle total do processo.' },
   ];
 
   pousts = [
     {
-    title: 'Serviço A',
-    descriptions: 'Serviço prestado a empresa A, passando metros de fibras, mais informações relevantes',
-    urlImagens: 'assets/videos/mmjetimagevideo1.png',
-    urlVideo: 'assets/videos/mmjetvideo1.mp4'
-  },
+      title: 'Serviço A',
+      descriptions:
+        'Serviço prestado a empresa A, passando metros de fibras, mais informações relevantes',
+      urlImagens: 'assets/videos/mmjetimagevideo1.png',
+      urlVideo: 'assets/videos/mmjetvideo1.mp4',
+    },
     {
-    title: 'Serviço B',
-    descriptions: 'Serviço prestado a empresa A, passando metros de fibras, mais informações relevantes',
-    urlImagens: 'assets/videos/mmjetimagevideo2.jpg',
-    urlVideo: 'assets/videos/mmjetvideo2.mp4'
-  }
-];
+      title: 'Serviço B',
+      descriptions:
+        'Serviço prestado a empresa A, passando metros de fibras, mais informações relevantes',
+      urlImagens: 'assets/videos/mmjetimagevideo2.jpg',
+      urlVideo: 'assets/videos/mmjetvideo2.mp4',
+    },
+  ];
 
   constructor(private socialActions: SocialActionsService) {}
 
@@ -57,15 +54,13 @@ export class MainScreenComponent {
     this.socialActions.executarAcao(rede);
   }
 
-
   @Output() clickBotao = new EventEmitter<string>();
 
   clicou(rede: string) {
     this.clickBotao.emit(rede);
   }
 
-  abrirModal(url: string){
+  abrirModal(url: string) {
     console.log('Passando o url: ', url);
-}
-
+  }
 }

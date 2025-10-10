@@ -2,15 +2,19 @@
   <div class="line main__line">
     <div class="container__main-line">
       <div class="title__Advertising">
-        <h1>Titulo da propaganda</h1>
+        <h1>MM JET LOCAÇÕES</h1>
+        <h3>Instalação de Cabos com Tecnologia de Ponta!</h3>
       </div>
       <div class="description">
-        <p>Breve descrição do seu produto</p>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nesciunt
-          saepe temporibus omnis pariatur qui corporis reiciendis, architecto
-          aliquid, suscipit repellendus! Quibusdam, optio. Hic laborum sapiente
-          maxime quisquam eveniet nam.
+          Você precisa instalar cabos de telecomunicações com rapidez,
+          eficiência e sem dor de cabeça?
+        </p>
+        <p>Nós temos a solução ideal!</p>
+        <p>
+          Apresentamos o serviço com a Superjet da Empretec, o equipamento mais
+          avançado para instalação de cabos via sopramento em tubos
+          pré-instalados.
         </p>
       </div>
       <div class="concact">
@@ -24,10 +28,10 @@
       </div>
     </div>
   </div>
-  <div class="line ">
+  <div class="line">
     <div class="container__line-one">
       <div class="title__line-one">
-        <h2>Tipos de equipamentos</h2>
+        <!-- <h2>Tipos de equipamentos</h2> -->
       </div>
       <div class="products__container">
         <div class="products-card" *ngFor="let produto of produtos">
@@ -40,7 +44,15 @@
   <div class="line secondary__line-two">
     <div class="container__line-one">
       <div class="title__line-two">
-        <h2>Enfase na disponibilidade</h2>
+        <h2>
+          Com a MM Jet Locações, seu projeto ganha em agilidade, segurança e qualidade.
+        </h2>
+        <p>
+          Ideal para redes de fibra óptica, telecomunicações e infraestrutura
+          moderna.
+        </p>
+
+        <p>Entre em contato e leve inovação para sua rede!</p>
       </div>
       <div class="concact">
         <div class="buttons" (click)="abrir('whatsapp')">
@@ -60,10 +72,10 @@
         </ul>
       </div>
       <div class="container__concact">
-        <div class="title__line-three">
+        <!-- <div class="title__line-three">
           <h3>Visite nossa loja!</h3>
           <p>Rua do seu estabelecimento , numero, bairro</p>
-        </div>
+        </div> -->
         <div class="container__card-contact">
           <div class="card__contact">
             <div class="card__contact-descrition">
@@ -76,7 +88,7 @@
               <p>emailemail.com</p>
             </div>
           </div>
-          <div class="card__map">
+          <!-- <div class="card__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.5742335877717!2d-48.32232272388013!3d-18.95022590855013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a443601083981d%3A0xc102f9c43603574c!2sAv.%20Paulo%20Firmino%2C%20591%20-%20Jardim%20Holanda%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038412-322!5e0!3m2!1spt-BR!2sbr!4v1759681233594!5m2!1spt-BR!2sbr"
               width="100%"
@@ -86,20 +98,14 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
   <div class="line secondary__line-four">
-    <h3>Outras considerações</h3>
-    <tcx-postagens
-    [pousts]="pousts"
-    (event_click)="abrirModal($event)"
-    />
-
+    <h2>Serviços Prestados</h2>
+    <tcx-postagens [pousts]="pousts" (event_click)="abrirModal($event)" />
   </div>
-  <div class="line">
-
-  </div>
+  <div class="line"></div>
 </div>
